@@ -1,0 +1,23 @@
+nav {
+  width: 100vw;
+  height: 9vh;
+  background-color: rgb(76, 86, 196);
+  border-radius: 10%;
+  border-color: black;
+}
+
+body {
+  background-color: rgb(50, 50, 50);
+}
+.hrid {
+  display: grid;
+  grid-template-rows: repeat(4, 100px);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: cadetblue;
+  width: 80vw;
+  height: 100px;
+}

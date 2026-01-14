@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.huree {
+  width: 200px;
+  height: 90px;
+  background: #0a3cc4;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 60, 196, 1) 0%,
+    rgba(165, 83, 237, 0.93) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+h4 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  font-size: 15px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .hureelegch:hover .huree {
+  border-radius: 50%;
+} */
+.huree:hover .send {
+  opacity: 0%;
+  background-color: navajowhite;
+  width: 45px;
+  height: 45px;
+  border: 15px solid #ffdddd;
+  border-top: 15px solid #004472;
+  border-radius: 50%;
+  animation: spin linear 2s infinite;
+}

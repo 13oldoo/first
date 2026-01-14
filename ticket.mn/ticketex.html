@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticketmn</title>
+  <link rel="stylesheet" href="ticketex.css" />
+</head>
+
+<body>
+  <!-- STICKY WRAPPER -->
+  <div class="site-top" id="siteTop">
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <a class="topbar__link" href="#"><span class="flag">GB</span> English</a>
+          <a class="topbar__link" href="#">Хамтран ажиллах</a>
+          <a class="topbar__link" href="tel:19001800">1900-1800</a>
+        </div>
+
+        <div class="topbar__right">
+          <a class="social" href="#" aria-label="Facebook">f</a>
+          <a class="social" href="#" aria-label="Instagram">◎</a>
+          <a class="social" href="#" aria-label="Twitter">𝕏</a>
+          <a class="social" href="#" aria-label="LinkedIn">in</a>
+          <a class="social" href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#" aria-label="Ticket.mn">
+          <span class="logo__box">TICKET<span class="logo__dot">.MN</span></span>
+        </a>
+
+        <!-- Burger (mobile) -->
+        <button class="burger" id="burgerBtn" aria-label="Цэс нээх" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Nav -->
+        <nav class="nav" id="mainNav">
+          <a class="nav__item" href="#">
+            <span class="nav__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M9 8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-dasharray="2.2 2.2"/>
+              </svg>
+            </span>
+            <span class="nav__label">Үзвэр</span>
+          </a>
+
+          <a class="nav__item" href="#">
+            <span class="nav__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M12 3l2.7 5.6 6.2.9-4.5 4.4 1.1 6.2L12 17.9 6.5 20.1 7.6 13.9 3.1 9.5l6.2-.9L12 3z"
+                      fill="none" stroke="currentColor" stroke-width="1.8" />
+              </svg>
+            </span>
+            <span class="nav__label">Энтертайнмент</span>
+          </a>
+
+          <a class="nav__item" href="#">
+            <span class="nav__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M3 9l9-5 9 5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M5 10h14v10H5z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 10v10M12 10v10M16 10v10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </span>
+            <span class="nav__label">Музей</span>
+          </a>
+
+          <a class="nav__item" href="#">
+            <span class="nav__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22">
+                <path d="M7 3h10a2 2 0 0 1 2 2v10a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5a2 2 0 0 1 2-2z"
+                      fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M7 11h10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 18l-2 3M16 18l2 3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="9" cy="14.5" r="1" fill="currentColor"/>
+                <circle cx="15" cy="14.5" r="1" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="nav__label">Галт тэрэг</span>
+          </a>
+        </nav>
+
+        <a class="login" href="#">
+          <span class="login__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M4 21a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          Нэвтрэх
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <!-- HERO / SLIDER -->
+  <section class="hero" id="hero" style="--hero-bg: url('hero1.jpg');">
+    <button class="hero__arrow hero__arrow--left" id="prevBtn" aria-label="Previous">‹</button>
+
+    <div class="hero__stage">
+      <div class="slider" id="slider" aria-roledescription="carousel">
+        <div class="slider__track" id="track">
+          <div class="slide">
+            <img src="hero1.jpg" alt="Banner 1" draggable="false" />
+          </div>
+          <div class="slide">
+            <img src="hero2.jpg" alt="Banner 2" draggable="false" />
+          </div>
+          <div class="slide">
+            <img src="hero3.jpg" alt="Banner 3" draggable="false" />
+          </div>
+        </div>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Slider dots"></div>
+    </div>
+
+    <button class="hero__arrow hero__arrow--right" id="nextBtn" aria-label="Next">›</button>
+  </section>
+
+  <!-- SECTION TITLE + CATEGORIES -->
+  <section class="section">
+    <div class="container section__title">
+      <div class="title-left">
+        <span class="pin" aria-hidden="true">📍</span>
+        <h2>Үзвэр</h2>
+        <a class="title-more" href="#" aria-label="More">›</a>
+      </div>
+    </div>
+
+    <div class="container cats">
+      <a class="cat active" href="#"><span aria-hidden="true">≡</span> Бүгд</a>
+      <a class="cat" href="#"><span aria-hidden="true">🎵</span> Концерт</a>
+      <a class="cat" href="#"><span aria-hidden="true">🎭</span> Жүжиг</a>
+      <a class="cat" href="#"><span aria-hidden="true">🎤</span> Дууч</a>
+      <a class="cat" href="#"><span aria-hidden="true">🩰</span> Балет</a>
+      <a class="cat" href="#"><span aria-hidden="true">★</span> Entertainment</a>
+      <a class="cat" href="#"><span aria-hidden="true">🏃</span> Спорт</a>
+      <a class="cat" href="#"><span aria-hidden="true">⋯</span> Бусад</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

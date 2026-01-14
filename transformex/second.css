@@ -1,0 +1,60 @@
+body{
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 30px;
+}
+@keyframes erg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes erg2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes erg3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loding {
+    background-color: rgb(28, 28, 163);
+    width: 70px;
+    height: 70px;
+    animation-delay: 0s;
+    animation-name: erg;
+    animation: erg linear 2s infinite 0s alternate;
+    animation-timing-function: ease-in-out;
+}
+.loding2 {
+    background-color: rgb(28, 28, 163);
+    width: 70px; 
+    height: 70px;
+    animation-delay: 0.5s;
+    animation-name: erg2;
+    animation: erg2 linear 2s infinite 0.25s alternate;
+    animation-timing-function: ease-in-out;
+}
+.loding3 {
+    background-color: rgb(28, 28, 163);
+    width: 70px;
+    height: 70px;
+    animation-delay: 1s;
+    animation-name: erg3;
+    animation: erg3 linear 2s infinite 0.5s alternate;
+    animation-timing-function: ease-in-out;
+}

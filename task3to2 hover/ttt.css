@@ -1,0 +1,34 @@
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.guraw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+
+.deed,
+.dund,
+.dood {
+  width: 200px;
+  height: 65px;
+  background-color: white;
+  border-radius: 40px;
+}
+.guraw:hover .dund {
+  opacity: 0%;
+}
+.guraw:hover .deed {
+  background-color: blue;
+  transform: translateY(15px) rotate(45deg);
+}
+
+.guraw:hover .dood {
+  background-color: red;
+  transform: translateY(-15px) rotate(-45deg);
+}

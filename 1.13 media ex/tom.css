@@ -1,0 +1,22 @@
+nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: lightgreen;
+  border-radius: 10%;
+  border-color: black;
+}
+body {
+  background-color: rgb(50, 50, 50);
+}
+.hrid {
+  display: grid;
+  grid-template-columns: repeat(4, 24vw);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: cadetblue;
+  width: 24vw;
+  height: 100px;
+}

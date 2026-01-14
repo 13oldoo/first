@@ -1,0 +1,26 @@
+body{
+    background-color: #11071f;
+    width: 100vw;
+    height: auto;
+}
+header{
+    background-color: #11071f;
+    width: 100vw;
+    height: 123px;
+    border-bottom: rgba(255, 255, 255, 0.358) 1.58px solid;
+}
+.headcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uls{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
